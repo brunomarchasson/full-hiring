@@ -1,3 +1,3 @@
-const { fizzBuzzStream } = require("./lib/stream");
+const { fizzBuzzFunctional } = require("./lib/functional");
 
-module.exports = fizzBuzzStream
+module.exports = fizzBuzzFunctional
