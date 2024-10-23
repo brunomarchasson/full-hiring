@@ -1,14 +1,35 @@
 {
-  "name": "project",
+  "name": "fleet",
   "version": "1.0.0",
   "license": "proprietary",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint src",
+    "dev": "ts-node ./src/App/cli.ts",
+    "test": "cucumber-js --profile default"
+  },
+  "bin": {"fleet": "dist/App/cli.js"},
   "devDependencies": {
-    "@cucumber/cucumber": "^8.3.0",
+    "@cucumber/cucumber": "^11.0.1",
+    "@eslint/js": "^9.12.0",
+    "@types/better-sqlite3": "^7.6.11",
     "@types/cucumber": "^6.0.1",
     "@types/node": "^14.0.27",
-    "typescript": "^4.5.4"
+    "@types/yargs": "^17.0.33",
+    "@typescript-eslint/eslint-plugin": "^8.9.0",
+    "@typescript-eslint/parser": "^8.9.0",
+    "eslint": "^9.12.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.11.0",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^4.5.4",
+    "typescript-eslint": "^8.9.0",
+    "yargs": "^17.7.2"
   },
-  "scripts": {
-    "test": "cucumber-js --profile default"
+  "dependencies": {
+    "better-sqlite3": "^11.5.0",
+    "commander": "^12.1.0",
+    "uuid": "^10.0.0"
   }
 }

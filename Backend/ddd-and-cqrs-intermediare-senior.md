@@ -134,9 +134,16 @@ Please wrap the part 1 into a complete application. We want:
 ## Step 3
 
 - For code quality, you can use some tools : which one and why (in a few words) ?
+1. ESLint: For catching errors and enforcing coding standards in JavaScript and TypeScript.
+2. Prettier: For automatically formatting code consistently.
+3. Jest: For testing JavaScript and TypeScript code to ensure correctness.
+
 - you can consider to setup a ci/cd process : describe the necessary actions in a few words
-
-
+1. Integrate Jest and ESLint for running tests and code quality checks on every push/merge.
+2. Use GitHub Actions to automate testing and ensure all checks pass before merging.
+3. Automate the build process to package your application.
+4. Set up deployment scripts to automatically deploy your application to staging/production environments after successful builds.
+   
 #### Evaluation
 
 - Quality of the code.
