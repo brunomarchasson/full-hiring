@@ -8,17 +8,19 @@
     "dev": "ts-node ./src/App/cli.ts",
     "test": "cucumber-js --profile default"
   },
-  "bin": {"fleet": "dist/App/cli.js"},
+  "bin": {
+    "fleet": "dist/App/cli.js"
+  },
   "devDependencies": {
     "@cucumber/cucumber": "^11.0.1",
-    "@eslint/js": "^9.12.0",
+    "@eslint/js": "^9.13.0",
     "@types/better-sqlite3": "^7.6.11",
     "@types/cucumber": "^6.0.1",
     "@types/node": "^14.0.27",
     "@types/yargs": "^17.0.33",
     "@typescript-eslint/eslint-plugin": "^8.9.0",
     "@typescript-eslint/parser": "^8.9.0",
-    "eslint": "^9.12.0",
+    "eslint": "^9.13.0",
     "eslint-config-prettier": "^9.1.0",
     "globals": "^15.11.0",
     "prettier": "^3.3.3",
